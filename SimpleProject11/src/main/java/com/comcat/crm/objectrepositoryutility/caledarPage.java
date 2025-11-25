@@ -35,6 +35,11 @@ public class caledarPage {
 	private WebElement enddate;
 	@FindBy(xpath = "//input[@alt='Save [Alt+S]']")
 	private WebElement savebtn;
+	@FindBy(xpath = "//input[@alt='Save [Alt+S]']")
+	private WebElement cancelbtn;
+	public WebElement getCancelbtn() {
+		return cancelbtn;
+	}
 	public WebDriver getDriver() {
 		return driver;
 	}
